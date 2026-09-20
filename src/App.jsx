@@ -1,16 +1,19 @@
-import Scene from "./components/Scene";
-import HeroOverlay from "./components/HeroOverlay";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 export default function App() {
   return (
-    <div className="relative bg-black min-h-screen">
-      <Scene />
-      <HeroOverlay />
-
-      {/* Your About / Projects sections go below — scroll-trigger hooks come in the next step */}
-      <section id="about" className="h-screen flex items-center justify-center text-white">
-        <h2 className="text-3xl">About Section (placeholder)</h2>
-      </section>
+    <div className="relative bg-black min-h-screen text-white overflow-x-hidden">
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 }
