@@ -18,7 +18,7 @@ export default function Hero() {
 
         <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-50 sm:text-5xl md:text-6xl">
           Building fast, thoughtful software
-          <span className="block bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
+          <span className="block bg-linear-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
             from database to pixel.
           </span>
         </h1>
@@ -30,7 +30,7 @@ export default function Hero() {
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          
+          <a
             href="#contact"
             className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-indigo-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-indigo-400 sm:w-auto"
           >
@@ -41,7 +41,7 @@ export default function Hero() {
             />
           </a>
 
-          
+          <a
             href="/resume.pdf"
             target="_blank"
             rel="noreferrer"

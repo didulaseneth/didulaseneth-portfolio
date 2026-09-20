@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Menu, X, Code2, Github, Linkedin } from 'lucide-react';
+import { useState } from 'react';
+import { Menu, X, Code2, BriefcaseBusiness } from 'lucide-react';
 
-export const Navbar = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -33,7 +33,7 @@ export const Navbar = () => {
               rel="noreferrer" 
               className="text-gray-400 hover:text-white transition-colors"
             >
-              <Github className="w-5 h-5" />
+              <Code2 className="w-5 h-5" />
             </a>
             <a 
               href="https://linkedin.com" 
@@ -41,7 +41,7 @@ export const Navbar = () => {
               rel="noreferrer" 
               className="text-gray-400 hover:text-white transition-colors"
             >
-              <Linkedin className="w-5 h-5" />
+              <BriefcaseBusiness className="w-5 h-5" />
             </a>
             <a 
               href="#contact" 
@@ -77,3 +77,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;
