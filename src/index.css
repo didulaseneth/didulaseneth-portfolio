@@ -1,1 +1,31 @@
+/* src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap");
+
 @import "tailwindcss";
+@config "../tailwind.config.js";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink text-fog font-body antialiased overflow-x-hidden;
+}
+
+::selection {
+  @apply bg-accent-via/40 text-white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-ink;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-border rounded-full;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-accent-from via-accent-via to-accent-to bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-x;
+}
