@@ -163,7 +163,7 @@ export default function About() {
         </div>
 
         {/* Highlights */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
           {highlights.map((h, i) => (
             <motion.div
               key={h.title}
@@ -171,12 +171,12 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="p-8 rounded-2xl bg-surface/50 border border-border hover:border-accent-via/40 hover:bg-surface/80 transition-all group"
+              className="p-5 sm:p-8 rounded-2xl bg-surface/50 border border-border hover:border-accent-via/40 hover:bg-surface/80 transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-accent-via/10 border border-accent-via/20 flex items-center justify-center text-accent-via group-hover:scale-110 group-hover:bg-accent-via/20 transition-all mb-5">
-                <h.icon size={22} />
+              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-accent-via/10 border border-accent-via/20 flex items-center justify-center text-accent-via group-hover:scale-110 group-hover:bg-accent-via/20 transition-all mb-4 sm:mb-5">
+                <h.icon size={20} />
               </div>
-              <h3 className="text-xl font-semibold text-fog group-hover:text-white transition-colors mb-2">
+              <h3 className="text-lg sm:text-xl font-semibold text-fog group-hover:text-white transition-colors mb-2">
                 {h.title}
               </h3>
               <p className="text-mist text-sm leading-relaxed">{h.description}</p>

@@ -17,7 +17,7 @@ export default function Contact() {
           <span className="text-xs uppercase tracking-widest text-accent-to font-mono font-semibold">
             Get In Touch
           </span>
-          <h2 className="font-display text-4xl sm:text-6xl font-bold mt-3 text-white">
+          <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold mt-3 text-white leading-tight">
             Let's build something <span className="text-gradient">extraordinary</span> together.
           </h2>
           <p className="mt-6 text-mist max-w-xl mx-auto text-base sm:text-lg leading-relaxed">
