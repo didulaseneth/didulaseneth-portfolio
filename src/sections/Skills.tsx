@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 const skillCategories = [
   {
     title: "Frontend & Mobile",
-    skills: ["React", "React Native", "TypeScript", "JavaScript", "Tailwind CSS", "Three.js / R3F", "Framer Motion", "HTML5 / CSS3"],
+    skills: ["React", "React Native", "TypeScript", "JavaScript", "HTML5 / CSS3", "Tailwind CSS", "Framer Motion"],
   },
   {
-    title: "Backend & Systems",
-    skills: ["Node.js", "Java", "PHP", "Express", "RESTful APIs", "Spring Boot (Basics)", "C / C++"],
+    title: "Backend & APIs",
+    skills: ["Java", "PHP", "Laravel", "REST APIs"],
   },
   {
-    title: "Databases & Tools",
-    skills: ["MySQL", "PostgreSQL", "MongoDB", "Git / GitHub", "Docker", "Postman", "Figma", "VS Code"],
+    title: "Database, Design & Tools",
+    skills: ["MySQL", "Figma", "UI/UX Design", "Git / GitHub"],
   },
 ];
 
@@ -33,7 +33,7 @@ export default function Skills() {
             Skills & Capabilities
           </h2>
           <p className="mt-4 text-mist max-w-2xl mx-auto text-base sm:text-lg">
-            Technologies and tools I work with to bring products to life.
+            What I build with, end to end — from schema to interface.
           </p>
         </motion.div>
 
