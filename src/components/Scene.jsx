@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { Environment, Suspense as DreiSuspense } from "@react-three/drei"; // Environment for realistic reflections
+import { Environment } from "@react-three/drei";
 import { Suspense } from "react";
 import Model from "./Model";
 import Loader from "./Loader";

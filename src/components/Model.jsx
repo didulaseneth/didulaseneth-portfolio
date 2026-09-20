@@ -6,8 +6,8 @@ export default function Model(props) {
   const group = useRef();
   const { viewport } = useThree();
 
-  // 👇👇👇 SWAP THIS PATH with your actual file name in /public/models/
-  const { scene } = useGLTF("/models/your-model.glb");
+  // Point to the actual model in /public/model/robot-model.glb
+  const { scene } = useGLTF("/model/robot-model.glb");
 
   useFrame((state) => {
     if (!group.current) return;
@@ -30,4 +30,4 @@ export default function Model(props) {
 }
 
 // Preload for smoother first paint
-useGLTF.preload("/models/your-model.glb"); // 👈 update path here too
+useGLTF.preload("/model/robot-model.glb");
